@@ -8,7 +8,7 @@ const SearchBar = ({term, onTermChange, onTermSubmit}) => {
             <Feather style={styles.iconStyle} name="search" />
             <TextInput 
                 style={styles.inputStyle} 
-                placeholder="SearchStuff"
+                placeholder="Search"
                 value={term}
                 onChangeText={onTermChange}
                 autoCapitalize="none"
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         marginHorizontal: 15,
         flexDirection: 'row',
+        marginBottom: 5
     },
     inputStyle: {
         flex: 1,
